@@ -54,11 +54,11 @@ set_wifi_def_cfg() {
             if [ $RADIO_NUM -eq 2 ]; then
                 configure_wifi $1 149 "${BASE_SSID}-5G" '12345678'
             else
-                configure_wifi $1 149 "${BASE_SSID}-5G1" '12345678'
+                configure_wifi $1 149 "${BASE_SSID}-5G_1" '12345678'
             fi
             FIRST_5G="1"
         else
-            configure_wifi $1 44 "${BASE_SSID}-5G2" '12345678'
+            configure_wifi $1 44 "${BASE_SSID}-5G_2" '12345678'
         fi
     else
         configure_wifi $1 1 "${BASE_SSID}" '12345678'
